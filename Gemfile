@@ -49,3 +49,7 @@ group :development do
   # gem "spring"
 end
 
+# gem 'importmap-rails'
+gem "table_print"
+gem 'faker'
+gem 'bootstrap'
