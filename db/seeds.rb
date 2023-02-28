@@ -14,3 +14,15 @@ require 'faker'
     content: Faker::Quote.yoda
   )
 end
+
+10.times do
+  user = User.create(
+    email: Faker::Internet.email,
+    password: Faker::String.random(length: 8)
+  )
+end
+
+admin = User.create(
+  email: "admin@admin.fr",
+  password: "admins"
+)
